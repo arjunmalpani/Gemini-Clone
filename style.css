@@ -59,7 +59,7 @@ header,
 .header{
   margin-top: 8vh;
   font-weight: var(--fw-bold);
-  display: none;
+  /* display: none; */
 }
 .header .title , .header .sub-title{
   font-size: var(--fs-500);
