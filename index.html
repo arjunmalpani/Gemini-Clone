@@ -9,10 +9,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="/main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <!-- Greeting -->
       <h2 class="title">Hello, There</h2>
@@ -44,24 +44,73 @@
         </li>
       </ul>
     </header>
-    <main>
-      <div class="prompt-area">
-        <form action="#" class="typing-form">
-          <div class="input-wrapper">
-            <input type="text" placeholder="Enter a prompt here" class="prompt-input" required>
-            <button class="icon">
-              <span class="material-symbols-rounded icon">Send</span>
-            </button>
-          </div>
-          <div class="action-btns">
-            <span class="material-symbols-rounded icon">light_mode</span>
-            <span class="material-symbols-rounded icon">delete</span>
-          </div>
-        </form>
-        <p class="disclaimer"> Gemini may display inaccurate info, including about people, so double-check its responses. <a href="https://support.google.com/gemini?p=privacy_notice" target="_blank">Your privacy and Gemini Apps</a></p>
+
+    <!-- Chat  -->
+    <div class="chat">
+      <!-- <div class="message out">
+        <div class="message-content">
+          <img src="./images/user.png" alt="User" class="avatar" />
+          <p class="text">
+            After setting up your code, run the script to see how the API
+            responds to your prompts.
+          </p>
+        </div>
       </div>
-    </main>
-    <aside>
-    </aside>
+      <div class="message in">
+        <div class="message-content">
+          <img src="./images/gemini.png" alt="gemini" class="avatar" />
+          <p class="text">
+            After setting up your code, run the script to see how the API
+            responds to your prompts.
+          </p>
+        </div>
+        <span class="material-symbols-rounded">content_copy</span>
+      </div> -->
+      <!-- <div cla 
+        <div class="message-content">
+          <img src="./images/gemini.png" alt="gemini" class="avatar" />
+          <p class="text">
+            After setting up your code, run the script to see how the API
+            responds to your prompts.
+          </p>
+          <div class="loading-indicator">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+          </div>
+        </div>
+        <span class="material-symbols-rounded">content_copy</span>
+      </div> -->
+    </div>
+    <!-- Prompt -->
+    <div class="prompt-area">
+      <form action="#" class="typing-form">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            placeholder="Enter a prompt here"
+            class="prompt-input"
+            required
+          />
+          <button class="icon" type="submit">
+            <span class="material-symbols-rounded icon">Send</span>
+          </button>
+        </div>
+        <div class="action-btns">
+          <span class="material-symbols-rounded icon">light_mode</span>
+          <span class="material-symbols-rounded icon">delete</span>
+        </div>
+      </form>
+      <p class="disclaimer">
+        Gemini may display inaccurate info, including about people, so
+        double-check its responses.
+        <a
+          href="https://support.google.com/gemini?p=privacy_notice"
+          target="_blank"
+          >Your privacy and Gemini Apps</a
+        >
+      </p>
+    </div>
+    <script type="module" src="/main.js"></script>
   </body>
-  </html>
+</html>
