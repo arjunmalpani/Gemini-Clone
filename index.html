@@ -43,44 +43,11 @@
           <span class="material-symbols-rounded">draw</span>
         </li>
       </ul>
-    </header>
-
+</header>
+    
     <!-- Chat  -->
     <div class="chat">
-      <!-- <div class="message out">
-        <div class="message-content">
-          <img src="./images/user.png" alt="User" class="avatar" />
-          <p class="text">
-            After setting up your code, run the script to see how the API
-            responds to your prompts.
-          </p>
-        </div>
-      </div>
-      <div class="message in">
-        <div class="message-content">
-          <img src="./images/gemini.png" alt="gemini" class="avatar" />
-          <p class="text">
-            After setting up your code, run the script to see how the API
-            responds to your prompts.
-          </p>
-        </div>
-        <span class="material-symbols-rounded">content_copy</span>
-      </div> -->
-      <!-- <div cla 
-        <div class="message-content">
-          <img src="./images/gemini.png" alt="gemini" class="avatar" />
-          <p class="text">
-            After setting up your code, run the script to see how the API
-            responds to your prompts.
-          </p>
-          <div class="loading-indicator">
-            <div class="loading-bar"></div>
-            <div class="loading-bar"></div>
-            <div class="loading-bar"></div>
-          </div>
-        </div>
-        <span class="material-symbols-rounded">content_copy</span>
-      </div> -->
+      
     </div>
     <!-- Prompt -->
     <div class="prompt-area">
@@ -90,15 +57,14 @@
             type="text"
             placeholder="Enter a prompt here"
             class="prompt-input"
-            required
           />
           <button class="icon" type="submit">
             <span class="material-symbols-rounded icon">Send</span>
           </button>
         </div>
         <div class="action-btns">
-          <span class="material-symbols-rounded icon">light_mode</span>
-          <span class="material-symbols-rounded icon">delete</span>
+          <span class="material-symbols-rounded icon" id="toggle-theme-button">light_mode</span>
+          <span class="material-symbols-rounded icon" id="delete-chat-button">delete</span>
         </div>
       </form>
       <p class="disclaimer">

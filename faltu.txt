@@ -1,0 +1,34 @@
+<!-- <div class="message out">
+        <div class="message-content">
+          <img src="./images/user.png" alt="User" class="avatar" />
+          <p class="text">
+            After setting up your code, run the script to see how the API
+            responds to your prompts.
+          </p>
+        </div>
+      </div>
+      <div class="message in">
+        <div class="message-content">
+          <img src="./images/gemini.png" alt="gemini" class="avatar" />
+          <p class="text">
+            After setting up your code, run the script to see how the API
+            responds to your prompts.
+          </p>
+        </div>
+        <span class="material-symbols-rounded">content_copy</span>
+      </div> -->
+      <!-- <div cla 
+        <div class="message-content">
+          <img src="./images/gemini.png" alt="gemini" class="avatar" />
+          <p class="text">
+            After setting up your code, run the script to see how the API
+            responds to your prompts.
+          </p>
+          <div class="loading-indicator">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+          </div>
+        </div>
+        <span class="material-symbols-rounded">content_copy</span>
+      </div> -->
