@@ -10,6 +10,14 @@ const deleteChatButton = document.getElementById("delete-chat-button");
 
 let userMessage = null;
 
+const isUserAtBottom = () => {
+  return chat.scrollHeight - chat.scrollTop <= chat.clientHeight + 100;
+};
+
+const scrollToBottom = () => {
+  chat.scrollTo(0, chat.scrollHeight);
+};
+
 const loadLocalStorageData = () => {
   const isLightMode = localStorage.getItem("themeColor") === "light_mode";
   const savedChat = localStorage.getItem("savedChat");
@@ -48,7 +56,9 @@ const showTypingEffect = (html, textElement) => {
       clearInterval(typingInterval);
       localStorage.setItem("savedChat", chat.innerHTML);
     }
-    chat.scrollTo(0, chat.scrollHeight); //scroll to bottom
+    if (isUserAtBottom()) {
+      scrollToBottom();
+    } //scroll to bottom
   }, 45);
 };
 const generateAPIResponse = async (incomingMessageDiv) => {
@@ -81,6 +91,9 @@ const generateAPIResponse = async (incomingMessageDiv) => {
       .replace(/(^|\s)\*(.*?)(\s|$)/g, "$1• $2$3"); // for bullet points
 
     // Apply the typing effect with formatted HTML
+    if (isUserAtBottom()) {
+      scrollToBottom();
+    }
     showTypingEffect(formattedResponse, textElement);
   } catch (error) {
     console.log(error);
@@ -146,12 +159,13 @@ const handleOutgoingChat = () => {
   setTimeout(showLoadingAnimation, 300);
 };
 
-// suggestions.forEach(suggestion, () => {
-//   suggestion.addEventListener("click", () => {
-//     userMessage = suggestion.querySelector("h4").innerText;
-//     handleOutgoingChat();
-//   });
-// });
+suggestions.forEach((suggestion) => {
+  suggestion.addEventListener("click", () => {
+    const inputField = typingForm.querySelector(".prompt-input");
+    inputField.value = suggestion.querySelector("h4").innerText;
+  });
+});
+
 
 toggleThemeButton.addEventListener("click", () => {
   const isLightMode = document.body.classList.toggle("light_mode");
