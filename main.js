@@ -1,5 +1,5 @@
 // API
-const API_KEY = `AIzaSyBLbFOY8JRQgZae4i1VCrML1CSFS2JgVAE`;
+const API_KEY = `AIzaSyB8rO374kl_31GYoIH8ERaecp6biLS8Kp0`;
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
 
 const typingForm = document.querySelector(".typing-form");
