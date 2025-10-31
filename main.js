@@ -1,6 +1,6 @@
 // API
 const API_KEY = `AIzaSyB8rO374kl_31GYoIH8ERaecp6biLS8Kp0`;
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-latest:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${API_KEY}`;
 
 const typingForm = document.querySelector(".typing-form");
 const chat = document.querySelector(".chat");
